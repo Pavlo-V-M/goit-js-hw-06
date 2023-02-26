@@ -38,7 +38,7 @@ const counterValue = {
 //   },
 // };
 
-// Отримуємо посилання на обєкти HTML - ромітки і відповідно інтерфейсу.
+// Отримуємо посилання на обєкти HTML - розмітки і відповідно інтерфейсу.
 
 const decrementBtn = document.querySelector('button[data-action="decrement"]');
 decrementBtn.style.backgroundColor = 'yellow';
@@ -68,7 +68,7 @@ incrementBtn.addEventListener('click', function () {
 });
 
 
-// Можна додати функцію, яка буде змінювати колір обєкта, який приймає зачення
+// Можна додати функцію, яка буде змінювати колір обєкта, який приймає значення
 // - в залежності від значення > 0 < значення;
 
 const colorChange = () => {

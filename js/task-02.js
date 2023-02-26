@@ -8,7 +8,20 @@ const ingredients = [
   'Condiments',
 ];
 
-// const list = document.querySelector("#ingredients");
+// Variant 1
+
+const list = document.querySelector('#ingredients');
+
+  ingredients.forEach(ingredient => {
+    const item = document.createElement('li');
+    item.classList.add('item');
+    item.textContent = ingredient;
+    list.appendChild(item);
+  });
+
+// Variant 2
+
+  // const list = document.querySelector("#ingredients");
 
 // const newArray = ingredients.map(ingredient => {
 // 	const items = document.createElement("li");
@@ -19,11 +32,3 @@ const ingredients = [
 
 // list.append(...newArray);
 
-const list = document.querySelector('#ingredients');
-
-  ingredients.forEach(ingredient => {
-    const item = document.createElement('li');
-    item.classList.add('item');
-    item.textContent = ingredient;
-    list.appendChild(item);
-  });

@@ -37,6 +37,7 @@ inputHref.addEventListener('blur', function(e) {
 });
 
 
+// Variant 2
 // {
 //   const input = document.getElementById('validation-input');
 //   const length = Number(input.dataset.length);
