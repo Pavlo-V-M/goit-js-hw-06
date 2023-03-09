@@ -3,16 +3,16 @@
 // із посиланням на поле введення
 
 const inputHref = document.querySelector('#validation-input');
-const TextInputLength = document.querySelector('input[data-length="6"]');
+const textInputLength = document.querySelector('input[data-length="6"]');
 
-console.log(typeof (TextInputLength));
-console.log(TextInputLength);
-console.log(TextInputLength.getAttribute('data-length'));
+console.log(typeof (textInputLength));
+console.log(textInputLength);
+console.log(textInputLength.getAttribute('data-length'));
 
 // створюємо змінну, яка буде відслідковувати 
 // кількість символів в строці
 
-const textLength = TextInputLength.getAttribute('data-length');
+const textLength = textInputLength.getAttribute('data-length');
 console.log(Number(textLength));
 console.log(typeof (textLength));
 

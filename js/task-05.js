@@ -28,7 +28,7 @@ const nameOutput = document.querySelector('#name-output');
 
 nameInput.addEventListener('input', (e) => {
   let name = e.target.value;
-  if (name !== '') {
+  if (name.trim() !== '') {
     nameOutput.textContent = name;
   } else {
     nameOutput.textContent = 'Anonymous';

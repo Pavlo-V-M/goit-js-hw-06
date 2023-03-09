@@ -8,27 +8,27 @@ const ingredients = [
   'Condiments',
 ];
 
-// Variant 1
+// // Variant 1
 
-const list = document.querySelector('#ingredients');
+// const list = document.querySelector('#ingredients');
 
-  ingredients.forEach(ingredient => {
-    const item = document.createElement('li');
-    item.classList.add('item');
-    item.textContent = ingredient;
-    list.appendChild(item);
-  });
+//   ingredients.forEach(ingredient => {
+//     const item = document.createElement('li');
+//     item.classList.add('item');
+//     item.textContent = ingredient;
+//     list.appendChild(item);
+//   });
 
 // Variant 2
 
-  // const list = document.querySelector("#ingredients");
+const list = document.querySelector("#ingredients");
 
-// const newArray = ingredients.map(ingredient => {
-// 	const items = document.createElement("li");
-// 	items.textContent = ingredient;
-// 	items.classList = "item";
-// 	return items;
-// });
+const newArray = ingredients.map(ingredient => {
+	const items = document.createElement("li");
+	items.textContent = ingredient;
+	items.classList = "item";
+	return items;
+});
 
-// list.append(...newArray);
+list.append(...newArray); // операція розпилення додає за одну ітерацію - за умовами завдання.
 
